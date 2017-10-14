@@ -1,0 +1,72 @@
+.header {
+  position: fixed;
+  width: 100vw;
+}
+
+.header h1 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.7);
+  font-size: 20px;
+}
+
+.main {
+  height: 100vh;
+  background-image: url('../image/bg.jpg');
+}
+
+.main-content {
+  position: relative;
+  top: 30%;
+}
+
+#main-heading {
+  margin-top: 0;
+  font-size: 50px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.main-content .line {
+  border: 2px solid #f05f40;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.main-intro {
+  font-family: "Merriweather";
+  font-size: 18px;
+  color: rgba(255,255,255,.7);
+  width: 60vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 35px;
+  line-height: 1.5;
+}
+
+.action {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #BC3500;
+  padding: 15px 30px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 100px;
+}
+
+.country-list {
+  height: 100vh;
+  border: 2px solid blue;
+}
+
+#main-service {
+  
+}
