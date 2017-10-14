@@ -65,7 +65,7 @@
 
 .country-list {
   height: 100vh;
-  background-color: rgba(188, 53, 0, 0.9);
+  background-color: rgba(188, 53, 0, 1);
   padding-top: 75px;
 }
 
@@ -86,19 +86,50 @@
 .service-box {
   margin-top: 50px;
   height: 150px;
-  width: 25vw;
-  height: 18.5vw;
+  width: 350px;
+  height: 253px;
   /*background-color: rgba(24,188,156,.9);*/
-  background-color: rgba(255,255,255,0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img-box {
+.one {
+  background-color: rgba(255,255,255,1);
+}
+
+.two {
+  background-color: rgba(255,255,255,1);
+}
+
+.three {
+  background-color: rgba(255,255,255,1);
+}
+
+.one .img-box {
   width: 15.5vw;
   height: 15.5vw;
   border-radius: 100%;
   background-image: url("../image/aid.jpg");
   background-size: cover;
+}
+
+.two .img-box {
+  width: 15.5vw;
+  height: 15.5vw;
+  border-radius: 100%;
+  background-image: url("../image/warning.jpg");
+  background-size: cover;
+}
+
+.three .img-box {
+  width: 15.5vw;
+  height: 15.5vw;
+  border-radius: 100%;
+  background-image: url("../image/donate.jpg");
+  background-size: cover;
+}
+
+.blur {
+  
 }
