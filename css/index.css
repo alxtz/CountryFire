@@ -14,6 +14,7 @@
 .main {
   height: 100vh;
   background-image: url('../image/bg.jpg');
+  min-height: 700px;
 }
 
 .main-content {
@@ -64,9 +65,40 @@
 
 .country-list {
   height: 100vh;
-  border: 2px solid blue;
+  background-color: rgba(188, 53, 0, 0.9);
+  padding-top: 75px;
 }
 
 #main-service {
-  
+  margin-top: 0;
+  font-size: 3em;
+  font-family: "Open Sans";
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-box {
+  margin-top: 50px;
+  height: 150px;
+  width: 25vw;
+  height: 18.5vw;
+  /*background-color: rgba(24,188,156,.9);*/
+  background-color: rgba(255,255,255,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box {
+  width: 15.5vw;
+  height: 15.5vw;
+  border-radius: 100%;
+  background-image: url("../image/aid.jpg");
+  background-size: cover;
 }
