@@ -2,6 +2,7 @@ console.log('this is the feed')
 $(document).ready(function() {
   $.get( "https://cors-anywhere.herokuapp.com/http://35.199.156.92:8787/api/all", function( data ) {
     console.log(data)
+    data.data = data.data.reverse()
     data.data.forEach(function functionName(feed) {
       if(feed.helpText == undefined || feed.helpText == 2) {
         return
@@ -15,7 +16,9 @@ $(document).ready(function() {
             <p class="help-text">` + feed.helpText + `</p>
           </div>
           <div class="col-md-3 do">
-            <button class="do-button" type="button" name="button">Help Him !</button>
+            <button class="do-button" type="button" name="button">
+              <a href="donate.html">Help Him !</a>
+            </button>
           </div>
         </div>`)
     })
