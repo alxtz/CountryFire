@@ -12,6 +12,9 @@ $(document).ready(function() {
         helpText: helpText,
         buttonText: 'Somehting',
         replyText: 'osmeoe'
+      },
+      success: function() {
+        window.location.replace("feed.html");
       }
     });
   });
