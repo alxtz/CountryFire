@@ -10,8 +10,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
 <style>
+	.main {
+      background-color: rgb(154, 53, 40);
+      background-image: none;
+    }
 .main-content {
-  top: 3%;
+  top: 10%;
 }
   article, aside, figure, footer, header, hgroup,
   menu, nav, section { display: block; }
@@ -24,7 +28,7 @@
     padding: 15px 30px;
     display: inline-block;
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
 	text-align:center
 	}
   body {
@@ -38,7 +42,12 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <h1 class="brand">Flame Watch</h1>
+        <h1 class="brand">
+          <a href="index.html#codeword">
+          <img class="logo-img" src="image/logo.png" alt="logo">
+          </a>
+          <p class="h1-text">Flame Watch</p>
+        </h1>
       </div>
     </div>
   </header>
@@ -51,6 +60,7 @@
       <h4 class = "main-intro"></h4>
       <center><canvas id="can" width="300px" height="200px" style="border:1px solid #000000">
       </canvas></center>
+<!-- <<<<<<< HEAD -->
 
   	  <div style name= "action">
 
@@ -64,6 +74,18 @@
       </label>
 
       <label class="action" id="submit">Submit</label>
+<!-- =======
+	  <div style name= "action">
+	  <input id = "finput" class = "action" type='file' multiple="false"
+	  style="display: none"
+    accept = "image/*"
+    onchange = "upload()"
+	  </div>
+	<label id = "upload" class = "action" for="finput">
+    Upload a photo
+  </label>
+  <input class = "action" type="button" value="Next" onclick="window.location.href='requestText.html'"></input>
+>>>>>>> 002bf873ff373a39e16cd7a219d728f3024cdc93 -->
     </div>
   </section>
   <script>
@@ -75,7 +97,11 @@
       document.getElementById('upload').innerHTML = 'Change Picture';
   }
   </script>
+<!-- <<<<<<< HEAD
   <script src ="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+=======
+  <script src ="SimpleImage.js"></script>
+>>>>>>> 002bf873ff373a39e16cd7a219d728f3024cdc93 -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

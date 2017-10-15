@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
   <style>
+    .main {
+      background-color: rgb(154, 53, 40);
+      background-image: none;
+    }
     textarea {
       font-size: 18px;
       margin-top: 75px;
@@ -43,6 +47,9 @@
     }
     .header h1 {
     }
+    .main {
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -63,38 +70,14 @@
   <section class="main">
     <div class="main-content">
       <h1 id="main-heading">Feeds</h1>
-      <div class="container">
-        <div class="feed row">
-          <div class="col-md-3 pic">
-            <img class="my-house" src="image/house.jpg" alt="house">
-          </div>
-          <div class="col-md-6 text">
-            <p class="help-text">I need puppies!</p>
-          </div>
-          <div class="col-md-3 do">
-            <button class="do-button" type="button" name="button">Help Him !</button>
-          </div>
-        </div>
-        <div class="feed row">
-          <div class="col-md-3 pic">
-            <img class="my-house" src="image/house.jpg" alt="house">
-          </div>
-          <div class="col-md-6 text">
-            <p class="help-text">I need puppies!</p>
-          </div>
-          <div class="col-md-3 do">
-            <button class="do-button" type="button" name="button">Help Him !</button>
-          </div>
-        </div>
+      <div class="container" id="feeds">
       </div>
 
   </section>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-  <script src="js/firebaseControl.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="js/feed.js"></script>
 </body>
