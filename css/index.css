@@ -24,10 +24,12 @@
 }
 
 .main {
-  height: 100vh;
+  min-height: 100%;
   background-image: url('../image/bg.gif');
   background-size: cover;
   min-height: 700px;
+  /* change this line for bottom */
+  padding-bottom: 50px;
 }
 
 .main-content {
