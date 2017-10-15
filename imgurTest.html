@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FlameWatch</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+<style>
+.main-content {
+  top: 3%;
+}
+  article, aside, figure, footer, header, hgroup,
+  menu, nav, section { display: block; }
+  .action {
+    font-weight: 700;
+    border-radius: 300px;
+    color: #fff;
+    background-color: #BC3500;
+    padding: 15px 30px;
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+	text-align:center
+	}
+  body {
+    margin: 0px;
+        padding: 0px;
+        overflow-y: auto;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <h1 class="brand">Flame Watch</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="main-content">
+      <h1 id="main-heading">Request Aid</h1>
+      <div class="line"></div>
+      <h4 class="main-intro">Take a photo of your situation and enter the direct link to the imgur file</h3>
+	  <div style name= "action">
+      <form class = method="post">
+              <input class = "action" value = "Enter text" type="text" name="link">
+              <script>
+               var imgurLink = document.getElementById("link")
+              </script>
+      </form>
+  <input class = "action" type="button" value="Next" onclick="window.location.href='requestText.html'"></input>
+    </div>
+  </div>
+  </section>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
