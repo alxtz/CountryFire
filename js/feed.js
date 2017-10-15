@@ -1,6 +1,6 @@
 console.log('this is the feed')
 $(document).ready(function() {
-  $.get( "http://35.199.156.92:8787/api/all", function( data ) {
+  $.get( "https://cors-anywhere.herokuapp.com/http://35.199.156.92:8787/api/all", function( data ) {
     console.log(data)
     data.data.forEach(function functionName(feed) {
       if(feed.helpText == undefined || feed.helpText == 2) {
