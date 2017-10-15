@@ -175,6 +175,6 @@
   width: 50px;
   margin-right: 10px;
 }
-html {
-        overflow: auto;
+body {
+   overflow: hidden;
 }
