@@ -94,9 +94,19 @@
       <h4 class="main-intro">What are you in need of?</h4>
     <textarea name="name1" rows="3" cols="70"></textarea>
     <h4 class="main-intro">Where are you located?</h4>
-  <textarea name="name2" rows="1" cols="50"></textarea>
+    <textarea name="name2" rows="1" cols="50"></textarea>
       <span class="action1">Submit</span>
     </div>
   </section>
+  
+  <script>
+    function upload(){
+      var imgcanvas = document.getElementById("can");
+      var fileinput = document.getElementById("finput");
+      var image = new SimpleImage(fileinput);
+      image.drawTo(imgcanvas);
+        document.getElementById('upload').innerHTML = 'Change Picture';
+    }
+  </script>
 </body>
 </html>
