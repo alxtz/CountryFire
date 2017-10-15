@@ -30,7 +30,6 @@
   body {
     margin: 0px;
         padding: 0px;
-  overflow-y:hidden;
   }
 }
 </style>
@@ -56,9 +55,11 @@
 	  <input id = "finput" class = "action" type='file' multiple="false"
 	  style="display: none"
     accept = "image/*"
-    onchange = "upload()"/>
+    onchange = "upload()"
 	  </div>
-	<label class = "action" for="finput">Upload a photo</label>
+	<label id = "upload" class = "action" for="finput">
+    Upload a photo
+  </label>
   <label class = "action">Next</label>
     </div>
   </section>
@@ -68,9 +69,11 @@
     var fileinput = document.getElementById("finput");
     var image = new SimpleImage(fileinput);
     image.drawTo(imgcanvas);
+      document.getElementById('upload').innerHTML = 'Change Picture';
   }
   </script>
   <script src ="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+
 		</script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
