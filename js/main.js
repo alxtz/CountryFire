@@ -3,6 +3,7 @@ var dbNotesList = [];
 var isLoadFirstTime = true;
 
 dataNodeRef.on('value', snap => {
+  console.log('The snap is', snap)
     var dbContent = JSON.stringify(snap.val(), null, 3);
 
     $('#firebaseData').text(dbContent);

@@ -51,16 +51,19 @@
       <h4 class = "main-intro"></h4>
       <center><canvas id="can" width="300px" height="200px" style="border:1px solid #000000">
       </canvas></center>
-	  <div style name= "action">
-	  <input id = "finput" class = "action" type='file' multiple="false"
-	  style="display: none"
-    accept = "image/*"
-    onchange = "upload()"
-	  </div>
-	<label id = "upload" class = "action" for="finput">
-    Upload a photo
-  </label>
-  <label class = "action">Next</label>
+
+  	  <div style name= "action">
+
+  	    <input id = "finput" class = "action" type='file' multiple="false" style="display: none" accept = "image/*" onchange = "upload()">
+        <input type="text" placeholder="help_text">
+        <input type="text" placeholder="reply_text">
+  	  </div>
+
+    	<label id = "upload" class = "action" for="finput">
+        Upload a photo
+      </label>
+
+      <label class="action" id="submit">Submit</label>
     </div>
   </section>
   <script>
@@ -72,9 +75,11 @@
       document.getElementById('upload').innerHTML = 'Change Picture';
   }
   </script>
-  <script src ="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
-
-		</script>
+  <script src ="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="js/request.js"></script>
+
 </body>
 </html>
