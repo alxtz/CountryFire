@@ -9,7 +9,7 @@ $(document).ready(function() {
       $('#feeds').append(`
         <div class="feed row">
           <div class="col-md-3 pic">
-            <img class="my-house" src="image/house.jpg" alt="house">
+            <img class="my-house" src="` + feed.imageUrl + `" alt="house">
           </div>
           <div class="col-md-6 text">
             <p class="help-text">` + feed.helpText + `</p>
