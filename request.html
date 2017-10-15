@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FlameWatch</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+<style>
+.main-content {
+  top: 3%;
+}
+  article, aside, figure, footer, header, hgroup,
+  menu, nav, section { display: block; }
+  .action {
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #BC3500;
+    padding: 15px 30px;
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+	text-align:center
+	}
+  body {
+    margin: 0px;
+        padding: 0px;
+  overflow-y:hidden;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <h1 class="brand">Flame Watch</h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="main-content">
+      <h1 id="main-heading">Request Aid</h1>
+      <div class="line"></div>
+      <h4 class="main-intro">Upload a photo of your current situation.</h3>
+      <h4 class = "main-intro"></h4>
+      <center><canvas id="can" width="300px" height="200px" style="border:1px solid #000000">
+      </canvas></center>
+	  <div style name= "action">
+	  <input id = "finput" class = "action" type='file' multiple="false"
+	  style="display: none"
+    accept = "image/*"
+    onchange = "upload()"/>
+	  </div>
+	<label class = "action" for="finput">Upload a photo</label>
+  <label class = "action">Next</label>
+    </div>
+  </section>
+  <script>
+  function upload(){
+    var imgcanvas = document.getElementById("can");
+    var fileinput = document.getElementById("finput");
+    var image = new SimpleImage(fileinput);
+    image.drawTo(imgcanvas);
+  }
+  </script>
+  <script src ="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+		</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
