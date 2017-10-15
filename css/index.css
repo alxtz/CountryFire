@@ -8,10 +8,20 @@
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(255,255,255,.7);
-  font-size: 20px;
+  font-size: 40px;
 
   text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
   background-clip: text;
+  display: flex;
+  align-items: center;
+
+  color: #f05f40;
+}
+
+.h1-text {
+  margin: 0;
+  font-size: 35px;
+  margin-top: 3px;
 }
 
 .main {
@@ -53,6 +63,9 @@
   margin: 0 auto;
   margin-top: 35px;
   line-height: 1.5;
+  text-shadow: 2px 2px 3px rgba(255,0,0,0.2);
+
+  color: #f05f40;
 }
 
 .action {
@@ -156,4 +169,9 @@
   font-family: "Merriweather";
   font-size: 25px;
   color: white;
+}
+
+.logo-img {
+  width: 50px;
+  margin-right: 10px;
 }
