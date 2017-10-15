@@ -14,7 +14,6 @@
   background-clip: text;
   display: flex;
   align-items: center;
-
   color: #f05f40;
 }
 
@@ -48,6 +47,18 @@
   background-clip: text;
   text-decoration: none;
 }
+#main-heading: hover {
+  margin-top: 0;
+  font-size: 50px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+  background-clip: text;
+  text-decoration: none;
+}
 .main-content .line {
   border: 2px solid #f05f40;
   width: 50px;
@@ -65,7 +76,20 @@
   margin-top: 35px;
   line-height: 1.5;
   text-shadow: 2px 2px 3px rgba(255,0,0,0.2);
-
+  text-decoration: none;
+  color: #f05f40;
+}
+.main-intro: hover {
+  font-family: "Merriweather";
+  font-size: 18px;
+  color: rgba(255,255,255,.7);
+  width: 60vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 35px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 3px rgba(255,0,0,0.2);
+  text-decoration: none;
   color: #f05f40;
 }
 
