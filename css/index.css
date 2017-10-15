@@ -14,7 +14,6 @@
   background-clip: text;
   display: flex;
   align-items: center;
-
   color: #f05f40;
 }
 
@@ -65,7 +64,7 @@
   margin-top: 35px;
   line-height: 1.5;
   text-shadow: 2px 2px 3px rgba(255,0,0,0.2);
-
+  text-decoration: none;
   color: #f05f40;
 }
 
